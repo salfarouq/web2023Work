@@ -1,0 +1,15 @@
+.tea{
+
+    margin-right:4px;
+    border-style:outset;
+    position:absolute;
+}
+.image{
+    position: absolute;
+    top: 1px;
+    right:3px;
+    height:2800px;
+}
+p{
+  padding:2px;
+}
