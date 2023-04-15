@@ -1,21 +1,40 @@
 .nurve{
+    background-color: rgb(112, 211, 245);
     position:sticky;
-    top:2px;
-    height:50px;
-    background-color: black;
-    font-size: 20px;
-    color:white;
-    font-family: Calibri;
-    text-decoration: none;
-    padding:20px;
+    margin:10px;
+    height:67px;
+    padding-top:5px;
+    
 }
 
 ul li{
-
-    text-decoration:none;
+    width:10%;
+    text-transform: capitalize;
     display:inline-block;
+    height:5%;
+
 }
+.content{
+    padding:4px;
+    background-color: aqua;
+    color:white;
+    display:grid;
+    grid-template-columns: 30% 30% 40% auto;
+    height:500px;
+}
+.disc{
+    background-color: white;
+    width:300px;
+    padding:2px;
+    font-size:14px;
+    color:blue;
+    background-image: url("tea.jpeg");
+}
+
 ul li a{
     text-decoration:none;
-    display:block;
+    color:white;
+    font-family:calibri;
+    vertical-align: middle;
+    display:inline-block;
 }
