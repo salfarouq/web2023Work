@@ -19,16 +19,18 @@ ul li{
     background-color: aqua;
     color:white;
     display:grid;
-    grid-template-columns: 30% 30% 40% auto;
+    grid-template-columns: 30% 30% 30% auto;
     height:500px;
 }
 .disc{
     background-color: white;
     width:300px;
     padding:2px;
-    font-size:14px;
+    font-size:15px;
     color:blue;
-    background-image: url("tea.jpeg");
+    background-image: url();
+    border-radius: 5%;
+
 }
 
 ul li a{
@@ -37,4 +39,5 @@ ul li a{
     font-family:calibri;
     vertical-align: middle;
     display:inline-block;
+    font-size:20px;
 }
