@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		th{
+			border-style: solid;
+		}
+		td{
+			border-style: solid;
+		}
+	</style>
+</head>
+<body>
+	<h1>The code for the table</h1>
+	<table style="border-style: solid;">
+	<thead><th colspan="4">Table Heading Cell Spannign 4 Columns</th></thead> 
+	<tbody>
+		<tr><td>Normal Cell</td>
+			<td colspan="2">Cell spanning 2 columns</td>
+			<td>Normal Cell</td></tr>
+		<tr><td rowspan="3" bgcolor="gray">Cell spanning 3<br>rowspan with <br>a grey (US spelling)<br>background</td>
+			<td>Normal Cell</td>
+			<td>Normal Cell</td>
+			<td>Normal Cell</td></tr>
+		<tr><td>Normal Cell</td>
+			<td colspan="2" rowspan="2">Cell spanning 2 rows and 2 <br>columns
+			</td>
+		</tr>
+		<tr><td>Normal Cell</td></tr>
+	</tbody>
+</table>
+		<p> Also we have to try and this one</p>
+		<fieldset><legend>Academic information</legend>
+			<form>
+				Degree<select>
+					<option>Master of business Administration</option>
+				</select><br>
+				Student ID<input type="text"><br>
+				Class attended <textarea>
+					Geography
+					Mathematics
+					English
+				</textarea>
+
+		</fieldset>
+			<fieldset><legend>Personal Details</legend>
+			<form>
+			First name <input type="text"><br>
+			Last name <input type="text"><br>
+			Gender: <input type="radio" name="gender">male
+			<input type="radio" name="gender">female<br>
+			Email <input type="email" name="email">
+				</textarea>
+
+		</fieldset>
+			
+		</fieldset>
+
+</body>
+</html>

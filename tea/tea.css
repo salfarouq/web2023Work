@@ -2,15 +2,11 @@
 
     margin-right:4px;
     border-style:outset;
-    position:absolute;
 }
-.image{
-    position: absolute;
-    top: 1px;
-    right:3px;
-    height:2800px;
-    padding:2px;
-}
+img{
+    float: right;
+    height: 150px;
+    width: 100px;
 p{
   padding:2px;
 }
