@@ -1,4 +1,5 @@
 .nurve{
+    float:center;
     background-color: rgb(112, 211, 245);
     position:sticky;
     margin:10px;
@@ -14,18 +15,33 @@ ul li{
     height:5%;
 
 }
+@media screen 
+    and (min-width:400px)
+    and (max-widht:600px)
+{
+    body{
+        background-color: red;
+   }
+}
+
+@supports (max-width:600px) and (min-width:400px){
+    div{
+        width:1250px;
+    }
+}
 .content{
     padding:4px;
     background-color: aqua;
     color:white;
-    display:grid;
-    grid-template-columns: 30% 30% 30% auto;
+    display:flex;
+    overflow:hidden;
     height:500px;
 }
 .disc{
+    margin:20px;
     background-color: white;
-    width:300px;
-    padding:2px;
+    width:600px;
+    padding:4px;
     font-size:15px;
     color:blue;
     background-image: url();

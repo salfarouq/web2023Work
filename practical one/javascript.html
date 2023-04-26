@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		let counter=0;
+		//alert("this is javascript");
+		function hellow(){
+			alert("This is hellow");
+			console.log("Everything is oky");
+
+			let person1 = function(name,age,place){
+
+			this.name=name;
+			this.age=age;
+			this.place=place;
+
+			
+			alert("mmmm");
+		}
+
+		let khamis = new person1('Ali',24,'magogoni');
+			console.log(person1(name));	
+	}
+	
+		function count(){
+			counter++
+				document.querySelector('h1').innerHTML=counter;
+				if(counter%10==0){
+					alert("now the value is:${`counter`}");         
+				}
+			console.log("count already")
+		}
+			function reverse(){
+			counter--
+				document.querySelector('h1').innerHTML=counter;
+				if(counter<=0){
+					alert("Ooops!! we reach at the end")
+						}
+				if(counter%10==0){
+					alert("now the value is:${`counter`}");         
+				}
+			console.log("count already")
+		} 
+
+		//array
+		var myarray=['cars','motocycle',4,true];
+		console.log(myarray);
+		var person = {
+			name: "Omar Ally",
+			age:23,
+			Male:true,
+			personality:[
+			'patinet','loyal','happy'
+			],
+			company:{
+			name:"SUZA",
+			id:223
+			}
+		}
+		console.log(person.name);
+		console.log(person.personality);
+		console.log(person['company'].id);
+	
+	</script>
+</head>
+<body>
+	<h1>1</h1>
+hellow<br>
+<button onclick="hellow()">Click</button>
+<button onclick="count()">Count</button>
+<button onclick="reverse()">Reverse</button>
+
+</body>
+</html>
