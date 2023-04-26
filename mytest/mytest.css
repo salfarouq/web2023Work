@@ -1,0 +1,29 @@
+img{
+	margin-top: 20px;
+	margin-bottom: 2px;
+	width: 350px;
+}
+body{
+	margin-top: 20px;
+	text-align: center;
+	font-family: Verdana;
+	align-content:stretch;
+}
+@media screen and(max-height: 50%){
+	body{
+		max-height: 50%;
+	}
+}
+div{
+	width: 350px;
+	border-left: 2x;
+	border-right: 2px;
+	border-style: dashed;
+	border-color:#e91e63;
+	border-bottom: none;
+	border-top: none;
+}
+caption{
+	font-size: 12;
+	font-weight: bold;
+}
