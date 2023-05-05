@@ -1,0 +1,28 @@
+
+  /* Style the slide show container */
+      .slideshow-container {
+    max-width: 800px;
+        position: relative;
+    margin:  0 auto;
+  }
+  
+      /* Style the images in the slide show */
+  .mySlides {
+    display: none;
+        max-height: 500px;
+    max-width: 100%;
+  }
+      img{
+      margin: 0 auto;
+      height: 500px;
+      width: 623px;
+    }
+  
+  /* Style the digital clock */
+  #clock {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

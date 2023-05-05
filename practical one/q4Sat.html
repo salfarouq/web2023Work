@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Image Slide Show and Digital Clock</title>
+     <script scr="q4Sat.js"></script>
+     <link rel="stylesheet" type="text/css" href="q4Sat.css">
+  </head>
+  <body>
+     <div class="slideshow-container">
+       <!--First slide -->
+      <div class="mySlides fade">
+        <img src="coffee.jpg" alt="Image 1">
+      </div>
+      
+       <!--Second slide -->
+      <div class="mySlides fade">
+        <img src="tea.jpeg" alt="Image 2">
+      </div>
+      
+       <!--Third slide -->
+      <div class="mySlides fade">
+        <img src="coffee.jpg" alt="Image 3">
+      </div>
+      
+      <!--Navigation buttons for the slide show-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    Display the digital clock 
+    <div id="clock"></div>
+    <a href="dom.html">Go to Page</a> 
+  <script>
+    
+ var slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+ 
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+  function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+   }
+   slides[slideIndex-1].style.display = "block";
+ };
+ const images = document.querySelectorAll("img");
+
+images.forEach(img => {
+  img.addEventListener("mouseover", function() {
+    img.style.height = "200px";
+    img.style.width = "200px";
+  });
+
+  img.addEventListener("mouseout", function() {
+    img.style.height = "500px";
+    img.style.width = "640px";
+  });
+});
+
+  </script>
+
+  
+  </body>
+</html>

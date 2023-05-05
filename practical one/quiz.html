@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+	<h1>Quiz</h1>
+	<p id="question"></p>
+	<input type="radio" name="answer" value="a"><span id="a"></span><br>
+	<input type="radio" name="answer" value="b"><span id="b"></span><br>
+	<input type="radio" name="answer" value="c"><span id="c"></span><br>
+	<button onclick="checkAnswer()">Submit Answer</button>
+	<p id="result"></p>
+	
+	<script>
+		// Define quiz questions and answers
+		var questions = [
+			{
+				question: "What is the capital of France?",
+				answers: {
+					a: "Paris",
+					b: "Madrid",
+					c: "London"
+				},
+				correctAnswer: "a"
+			},
+			{
+				question: "What is the largest planet in our solar system?",
+				answers: {
+					a: "Jupiter",
+					b: "Saturn",
+					c: "Uranus"
+				},
+				correctAnswer: "a"
+			},
+			{
+				question: "What is the chemical symbol for gold?",
+				answers: {
+					a: "Ag",
+					b: "Au",
+					c: "Cu"
+				},
+				correctAnswer: "b"
+			}
+		];
+
+		// Set current question index to 0
+		var currentQuestion = 0;
+
+		// Load the current question
+		function loadQuestion() {
+			var question = questions[currentQuestion];
+			document.getElementById("question").innerHTML = question.question;
+			document.getElementById("a").innerHTML = question.answers.a;
+			document.getElementById("b").innerHTML = question.answers.b;
+			document.getElementById("c").innerHTML = question.answers.c;
+		}
+
+		// Check the selected answer and display the result
+		function checkAnswer() {
+			var selectedAnswer = document.querySelector('input[name="answer"]:checked').value;
+			var question = questions[currentQuestion];
+			if (selectedAnswer === question.correctAnswer) {
+				document.getElementById("result").innerHTML = "Correct!";
+			} else {
+				document.getElementById("result").innerHTML = "Incorrect. The correct answer is " + question.answers[question.correctAnswer] + ".";
+			}
+			currentQuestion++;
+			if (currentQuestion < questions.length) {
+				loadQuestion();
+			} else {
+				document.getElementById("question").innerHTML = "Quiz Complete!";
+				document.getElementById("a").style.display = "none";
+				document.getElementById("b").style.display = "none";
+				document.getElementById("c").style.display = "none";
+				document.querySelector('input[type="submit"]').style.display = "none";
+			}
+		}
+
+		loadQuestion();
+	</script>
+</body>
+</html>

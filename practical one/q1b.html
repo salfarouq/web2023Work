@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sliding Menu Example</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		#header {
+			width: 100%;
+			height: 50px;
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			padding: 0 20px;
+			position: fixed;
+			top: 0;
+			z-index: 1;
+		}
+		#menu {
+			width: 250px;
+			height: 100%;
+			background-color: #333;
+			color: #fff;
+			position: fixed;
+			left: -250px;
+			top: 50px;
+			transition: left 0.5s ease-in-out;
+			z-index: 1;
+		}
+		#content {
+			width: 100%;
+			max-width: 960px;
+			margin: 50px auto 0;
+			padding: 20px;
+		}
+		#menu-toggle {
+			display: none;
+		}
+		@media screen and (max-width: 768px) {
+			#menu {
+				width: 100%;
+				height: 100vh;
+				left: -100%;
+				top: 0;
+			}
+			#menu-toggle:checked ~ #menu {
+				left: 0;
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#menu-toggle {
+				display: block;
+				position: fixed;
+				top: 10px;
+				left: 10px;
+				z-index: 2;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<label for="menu-toggle">&#9776;</label>
+		<span>Sliding Menu Example</span>
+	</header>
+	<input type="checkbox" id="menu-toggle">
+	<nav id="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	<div id="content">
+		<h1>Welcome to the Sliding Menu Example!</h1>
+		<p>This is an example of a sliding menu that can be used on a web page. The menu is hidden by default, and can be opened by clicking on a button or icon.</p>
+		<p>To see the sliding menu in action, try resizing your browser window to less than 768 pixels wide. This will activate the mobile version of the menu.</p>
+	</div>
+</body>
+</html>

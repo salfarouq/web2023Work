@@ -1,0 +1,28 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#quiz {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #f7f7f7;
+}
+
+.question {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.answer {
+	margin-bottom: 5px;
+}
+
+input[type="radio"] {
+	margin-right: 10px;
+}

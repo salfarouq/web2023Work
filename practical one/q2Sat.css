@@ -1,0 +1,5 @@
+#image {
+    position: relative;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+}

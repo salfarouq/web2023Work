@@ -14,10 +14,11 @@ const capitalizeParagraphs = () => {
 }
 
 document.addEventListener('DOMContentLoaded',function(){
-	document.querySelectorAll('button').forEach(function(button){
+	document.querySelectorAll("button").foreach(function(button){
 		button.onclick=function(){
 			document.querySelectorAll('h1').style.color=button.dataset.color;
 		};
 		
-	});
+	})
 })
+

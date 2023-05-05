@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move Element Horizontally</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		#container {
+			width: 100%;
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		#image {
+			position: relative;
+			left: 0;
+			transition: left 0.5s ease-in-out;
+		}
+	</style>
+	<script>
+		function moveImage() {
+			var image = document.getElementById("image");
+			var currentPosition = image.offsetLeft;
+			var newPosition = currentPosition + 100;
+			image.style.left = newPosition + "px";
+		}
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img id="image" src="https://picsum.photos/200/300" alt="Image">
+		<button id="button" onclick="moveImage()">Move Image</button>
+	</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Move Element Horizontally</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+		#container {
+			width: 100%;
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		#image {
+			position: relative;
+			left: 0;
+			transition: left 0.5s ease-in-out;
+		}
+		img:hover{
+			width: 45%;
+			height: 23%;
+		}
+	</style>
+	<script>
+		function moveImage() {
+			var image = document.getElementById("image");
+			var currentPosition = image.offsetLeft;
+			var newPosition = currentPosition + 100;
+			image.style.left = newPosition + "px";
+		}
+		setInterval(changetext,4000)
+		function changetext(){
+			document.querySelector('h1').innerHTML="Writing by Omar";
+		}
+	</script>
+</head>
+<body>
+	<div id="container">
+		<img id="image" src="https://picsum.photos/200/300" alt="Image"><br>
+		<button id="button" onclick="moveImage()">Move Image</button>
+	</div>
+	<h1>My name is Asha Moh'd</h1>
+
+</body>
+</html>
